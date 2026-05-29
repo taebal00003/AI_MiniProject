@@ -141,7 +141,6 @@ t_train = np.eye(10)[t_train]
 t_test = np.eye(10)[t_test]
 
 print("2. 네트워크 및 하이퍼파라미터 초기화 중...")
-# 드롭아웃 비율 0.5가 적용된 새로운 네트워크 사용
 network = ConvNetWithDropout(input_dim=(1, 28, 28), hidden_size=256, dropout_ratio=0.25)
 optimizer = Adam(lr=0.001)
 
